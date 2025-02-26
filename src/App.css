@@ -1,0 +1,532 @@
+/* App.css */
+body, html, #root {
+  background-color: #4790a4; /* Asettaa taustavärin koko sivulle */
+  height: 100%; /* Täyttää koko ruudun */
+  margin: 0;    /* Poistaa oletusvälit */
+  width: 100%;  /* Varmistaa, että body vie koko leveyden */
+}
+
+.App {
+  display: flex;
+  flex-direction: column; /* Asettelu pystysuunnassa */
+  min-height: 100vh; /* Varmistetaan, että sivu täyttää koko näytön */
+}
+
+main {
+  background-color: #4790a4;
+  flex: 1; /* Tämä vie kaiken jäljelle jäävän tilan Headerin ja Footerin välillä */
+  width: 100%; /* Varmistetaan, että main täyttää koko leveyden */
+}
+
+
+/* NAVIGATION */
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  color: white !important;
+  transition: color 0.3s ease;
+  font-size: 20px;
+}
+
+/* HOVER- JA AKTIIVINEN VÄRI */
+.nav-link:hover {
+  color: #f4dc7d !important;
+}
+
+.nav-link.active {
+  color: #ffcc00 !important;
+  font-weight: bold;
+}
+
+/* NAVITEM */
+.nav-item {
+  list-style: none;
+}
+
+/* NAVIGATION MUIKKAUS MOBIILISSA */
+@media (max-width: 768px) {
+  .navbar-nav {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .nav-link {
+    font-size: 16px;
+    padding: 10px;
+    display: block; /* Asettaa linkit omalle rivilleen */
+  }
+
+  .navbar-toggler {
+    border: none;
+    outline: none;
+  }
+}
+
+
+
+
+footer {
+  background-color: #286779; /* Footerin taustaväri */
+  color: white;
+  padding: 10px;
+  text-align: center;
+  min-height: 20px; /* Määrittää minimikorkeuden footerille */
+  margin-top: auto; /* Tämä varmistaa, että footer menee alas */
+}
+
+footer p {
+  margin-top: 20px; /* Siirtää tekstiä alaspäin */
+}
+
+
+.home-container {
+  padding: 50px;
+  text-align: left;
+}
+
+.home-container h1 {
+  font-size: 4.5rem;
+  margin-bottom: 30px;
+  font-family: 'DM-sans';
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 1); /* Tumma varjo */
+}
+
+
+@media (max-width: 768px) { /* Kun ruudun leveys on alle 768px (esim. tabletti tai mobiili) */
+  .home-container h1 {
+    font-size: 3rem; /* Pienennetään fonttikokoa pienellä näytöllä */
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) { /* Kun ruudun leveys on alle 768px (esim. tabletti tai mobiili) */
+  .home-container h1 {
+    font-size: 2.5rem; /* Pienennetään fonttikokoa pienellä näytöllä */
+    margin-bottom: 20px;
+  }
+}
+
+
+
+
+.home-container p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.home-container h2 {
+  margin-bottom: 30px;
+}
+
+.spacing-between {
+  margin-bottom: 100px; /* Voit muuttaa tämän arvoa tarpeen mukaan */
+}
+
+
+
+/* Taustakuva-asetukset */
+.home-background {
+  background-image: url('/ulkokuva.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .home-background {
+    background-size: cover;
+    background-position: center center; /* Keskittää kuvan, jos se on pienempi kuin näyttö */
+    height: 50%;
+
+  }
+}
+
+@media (max-width: 576px) {
+  /* Täällä lisäämme vielä säätöjä pienemmille näytöille, kuten puhelimen pystymuotoon */
+  .home-background {
+    background-size: cover;
+    background-position: center center; /* Keskittää kuvan, jos se on pienempi kuin näyttö */
+    height: 50%;
+  }
+}
+
+
+
+
+
+/* App.css tai vastaava */
+.img-rounded {
+  width: 90%; /* Kuvan leveys täyttämään elementin */
+  height: auto; /* Kuvan korkeus suhteessa leveyteen */
+  border-radius: 30px; /* Pyöreät kulmat */
+  border: 10px solid #286779; /* Paksu musta reuna */
+}
+
+
+.img-services {
+  width: 500px;      /* Kuvan leveys täyttää sen säilön leveys */
+  height: 400px;    /* Määritellään kiinteä korkeus, jolloin kuvat ovat samanpituisia */
+  object-fit: cover;  /* Kuva täyttää tilan, mutta se voi leikata kuvan osia säilyttäen mittasuhteet */
+  border-radius: 30px;  /* Pyöristetyt kulmat */
+  border: 10px solid #286779;  /* Paksu reuna */
+}
+
+
+.text-block {
+  max-width: 90%;  /* Rajoitetaan leveyttä */
+  word-wrap: break-word;  /* Pakottaa tekstin rikkoontumaan rivillä */
+  overflow-wrap: break-word;  /* Varmistaa tekstin rivin murtumisen */
+  margin-right: auto; /* Keskittää elementin */
+}
+
+
+
+.services-container {
+  padding: 50px;
+  text-align: left;
+}
+
+.services-container h1 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  font-family: 'DM-sans'
+}
+
+.services-container h3 {
+  font-size: 2rem;
+  margin-bottom: 100px;
+  font-family: 'DM-sans'
+}
+
+
+/*  tabletit ja pienemmät näytöt */
+@media (max-width: 768px) {
+  .services-container {
+    padding: 30px;
+  }
+
+  .services-container h1 {
+    font-size: 2rem;
+  }
+
+  .services-container h3 {
+    font-size: 1.3rem;
+  }
+
+  /* Varmistetaan, että kuvat ovat reagoivia */
+  .img-services {
+    width: 500px;      /* Kuvan leveys täyttää sen säilön leveys */
+    height: 400px;    /* Määritellään kiinteä korkeus, jolloin kuvat ovat samanpituisia */
+    object-fit: cover;  /* Kuva täyttää tilan, mutta se voi leikata kuvan osia säilyttäen mittasuhteet */
+    border-radius: 30px;  /* Pyöristetyt kulmat */
+    border: 10px solid #286779;  /* Paksu reuna */
+}
+
+  .img-rounded {
+    width: 100%; /* Kuvan koko skaalautuu täysikokoiseksi */
+  }
+
+  /* Tekstien ja kuvien asettelu mobiilissa */
+  .services-container h2 {
+    font-size: 1.8rem; /* Pienempi otsikko */
+    text-align: center; /* Keskitetään otsikko */
+  }
+
+  .services-container p {
+    font-size: 1rem; /* Tekstin koon pienentäminen mobiililla */
+  }
+
+  /* Sarakkeiden järjestys mobiililaitteilla */
+  .services-container .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services-container .col-md-6 {
+    width: 100%;
+    margin-bottom: 20px; /* Lisää tilaa sarakkeiden väliin */
+  }
+
+  .services-container .text-white {
+    text-align: center; /* Keskitetään tekstit */
+  }
+}
+
+/* Mobiili- ja pienemmät näytöt */
+@media (max-width: 576px) {
+
+  .services-container{
+    padding: 50px;
+  }
+
+  .services-container h1 {
+    font-size: 2rem; /* Pienempi pääotsikko */
+  }
+
+  .services-container h2 {
+    font-size: 1.5rem; /* Pienempi alaotsikko */
+    text-align: center;
+  }
+
+  .services-container h3 {
+    font-size: 1.5rem; /* Pienempi alateksti */
+  }
+
+  /* Kuvan skaalaus entistä pienemmille ruuduille */
+  .img-services {
+    width: 500px;
+    height: 400px;
+    margin-bottom: 20px;
+  }
+
+  .services-container p {
+    font-size: 1rem; /* Pienempi teksti pienillä näytöillä */
+  }
+}
+
+
+.references-container {
+  padding: 50px 20px; /* Pienempi padding pienillä näytöillä */
+  text-align: center;
+}
+
+@media (min-width: 768px) { 
+  .references-container {
+    padding: 80px;
+  }
+}
+
+@media (min-width: 1200px) { 
+  .references-container {
+    padding: 50px;
+  }
+}
+
+.carousel-text{
+  margin-bottom: 0.5rem;
+}
+
+
+.references-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  font-family: 'DM-sans';
+ 
+}
+
+.references-container h3 {
+  font-size: 2rem;
+  margin-bottom: 100px;
+  font-family: 'DM-sans';
+}
+
+@media (max-width: 576px) { /* Kun ruudun leveys on alle 768px (esim. tabletti tai mobiili) */
+  .references-container h1 {
+    font-size: 2rem; /* Pienennetään fonttikokoa pienellä näytöllä */
+    margin-bottom: 20px;
+  }
+
+  .references-container h3 {
+    font-size: 1.5rem
+  }
+}
+
+
+.carousel-control-prev, 
+.carousel-control-next {
+  filter: invert(0);  /* Värjää nuolinapit valkoisiksi */
+  opacity: 1;         /* Varmistaa, että painikkeet näkyvät kunnolla */
+}
+
+.carousel-control-prev {
+  left: -50px;  /* Siirtää vasemman painikkeen kauemmas kuvasta */
+}
+
+.carousel-control-next {
+  right: -50px; /* Siirtää oikean painikkeen kauemmas kuvasta */
+}
+
+
+/* Oletus koko */
+.carousel-img {
+  width: 90%;
+  height: 350px;
+  object-fit: cover;
+}
+
+/* Tabletit (näyttö alle 768px) */
+@media (max-width: 768px) {
+  .carousel-img {
+    width: 100%;
+    height: 350px;
+  }
+}
+
+/* Mobiili (näyttö alle 576px) */
+@media (max-width: 576px) {
+  .carousel-img {
+    width: 70%;
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-control-prev {
+    left: -20px; /* Siirtää nuolta oikealle */
+  }
+
+  .carousel-control-next {
+    right: -20px; /* Siirtää nuolta vasemmalle */
+  }
+}
+
+
+.carousel-indicators {
+  bottom: -50px;      /* Siirtää painikkeita suhteessa kuviin */
+}
+
+.gallery-img {
+  transition: transform 0.3s ease-in-out;
+}
+
+@media (max-width: 576px) {
+  .gallery-img {
+    width: 80% !important; /* Tekee kuvista hieman pienemmät */
+    margin: 0 auto; /* Keskittää kuvat */
+    display: block; /* Varmistaa, että ne keskitetään */
+  }
+}
+
+
+.gallery-img:hover {
+  transform: scale(1.05);
+}
+
+
+/* Tyylit raksipainikkeelle */
+.custom-close-btn {
+  background-color: white; /* Valkoinen pohja */
+  border: 2px solid black; /* Tumma reunus */
+  color: black; /* Tumma X */
+  font-size: 1rem; /* Suurempi X-kirjain */
+  padding: 0.5rem; /* Lisää tilaa painikkeelle */
+  border-radius: 50%; /* Pyöristää kulmat */
+  opacity: 0.8; /* Vähän läpinäkyvä, mutta erottuu hyvin */
+  transition: opacity 0.3s ease; /* Pehmeä siirtymä */
+}
+
+.custom-close-btn:hover {
+  opacity: 1; /* Täysin näkyvä hover-tilassa */
+}
+
+
+.custom-margin-top {
+  margin-top: 100px; /* Voit muuttaa tätä arvoa */
+}
+
+
+
+ul li {
+  margin-bottom: 20px; /* Lisää tilaa elementtien väliin */
+  text-align: left;
+  list-style-position: inside;
+  list-style-type: none;
+}
+
+
+
+
+.contact-container {
+  padding: 100px;
+}
+
+.contact-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  font-family: 'DM-sans'
+}
+
+.contact-container h3 {
+  font-size: 2rem;
+  margin-bottom: 100px;
+  font-family: 'DM-sans'
+}
+
+
+
+/* Poista liian suuret marginaalit mobiilissa */
+@media (max-width: 992px) {
+  .contact-container {
+    padding: 40px 20px; /* Lisää tilaa reunoihin */
+    text-align: center;
+  }
+
+  .contact-container h1 {
+    font-size: 2rem;
+  }
+
+  .contact-container h3 {
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+  }
+
+  .contact-box {
+    padding: 20px;
+    max-width: 100%; /* Jotta yhteystiedot ja lomake ovat täysleveitä mobiilissa */
+  }
+
+  .google-map {
+    width: 100%;
+    height: 250px; /* Pienempi kartta mobiilissa */
+    border-radius: 15px;
+  }
+
+
+}
+
+@media (max-width: 658px) {
+  .contact-test {
+    padding: 40px 
+  }
+}
+
+/* Poista liian suuret marginaalit mobiilissa */
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 40px 20px; /* Lisää tilaa reunoihin */
+    text-align: center;
+  }
+
+  .contact-container h1 {
+    font-size: 2rem;
+  }
+
+  .contact-container h3 {
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+  }
+
+  .contact-box {
+    padding: 20px;
+    max-width: 100%; /* Jotta yhteystiedot ja lomake ovat täysleveitä mobiilissa */
+  }
+
+  .google-map {
+    width: 100%;
+    height: 250px; /* Pienempi kartta mobiilissa */
+    border-radius: 15px;
+  }
+
+  
+}
