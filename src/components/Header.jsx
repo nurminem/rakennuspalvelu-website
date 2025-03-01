@@ -9,7 +9,7 @@ function Header() {
     return (
         <Navbar expand="lg" style={{backgroundColor: '#286779'}} variant='dark'>
             <Container>
-                {/* LOGO */}
+        
                 <Navbar.Brand as={Link} to="/">
                     <img src={logo} alt="Logo" className="img-fluid" style={{ width: '50px' }} />
                 </Navbar.Brand>

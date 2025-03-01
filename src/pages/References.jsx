@@ -1,11 +1,10 @@
-// src/pages/Contact.jsx
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom'; // Muista tuoda Link-komponentti
+import { Link } from 'react-router-dom';
 import { Container, Row, Col, Carousel, Modal } from 'react-bootstrap';
-import "bootstrap-icons/font/bootstrap-icons.css"; // Bootstrap Icons käyttöön
-import before1 from "../assets/before1.jpg"; // Kuvapolut
+import "bootstrap-icons/font/bootstrap-icons.css"; 
+import before1 from "../assets/before1.jpg"; 
 import after1 from "../assets/after1.jpg";
-import before2 from "../assets/before2.jpg"; // Kuvapolut
+import before2 from "../assets/before2.jpg"; 
 import after2 from "../assets/after2.jpg";
 import keittio from "../assets/keittio.jpg";
 import kylpyhuone from "../assets/kylpyhuone.jpg";
@@ -56,9 +55,7 @@ function References() {
 </Carousel>
 
 
-
         <h2 className='text-white text-center custom-margin-top'>Kuvagalleria</h2>
-        {/* Kuvagalleria Gridissä */}
         <Row className="mt-4">
   {galleryImages.map((image, index) => (
     <Col key={index} xs={12} sm={6} md={4} className="mb-4">
@@ -73,7 +70,7 @@ function References() {
   ))}
 </Row>
 
-      {/* Lightbox Modal (avaa kuvan isoksi) */}
+      {/* Avaa kuvan isoksi */}
       <Modal show={show} onHide={() => setShow(false)} centered>
   <Modal.Body className="text-center position-relative">
   <button

@@ -1,6 +1,5 @@
-// src/pages/Contact.jsx
 import React from 'react';
-import { Link } from 'react-router-dom'; // Muista tuoda Link-komponentti
+import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
 import keittio from '../assets/keittio.jpg';
 import lattia from '../assets/lattia.jpg';
@@ -75,7 +74,7 @@ function Home() {
           </Col>
         </Row>  
 
-        {/* Projektigalleria -osio */}
+    
       <Row className="mt-5 align-items-center">
         <Col xs={12} md={6} className='text-center text-md-start'>
           <h2 className="text-white"> Projektigalleria</h2>
@@ -89,7 +88,7 @@ function Home() {
         </Col>
         <Col xs={12} md={6} className='text-center'>
           <img
-            src={keittio} // Käytä omaa kuvaasi
+            src={keittio} 
             alt="Projektigalleria"
             className="img-fluid img-rounded img-home" 
           />
@@ -97,7 +96,6 @@ function Home() {
       </Row>
         </Container>
         </div>
-
     </>
     
     

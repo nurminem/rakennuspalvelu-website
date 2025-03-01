@@ -1,6 +1,5 @@
-// src/pages/Contact.jsx
 import React from 'react';
-import { Link } from 'react-router-dom'; // Muista tuoda Link-komponentti
+import { Link } from 'react-router-dom'; 
 import { Container, Row, Col } from 'react-bootstrap';
 import remontti from '../assets/kylpyhuone.jpg';
 import rakentaminen from '../assets/rakentaminen1.jpg';

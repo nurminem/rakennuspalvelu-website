@@ -1,6 +1,5 @@
-/* App.css */
 body, html, #root {
-  background-color: #4790a4; /* Asettaa taustavärin koko sivulle */
+  background-color: #4790a4; 
   height: 100%; /* Täyttää koko ruudun */
   margin: 0;    /* Poistaa oletusvälit */
   width: 100%;  /* Varmistaa, että body vie koko leveyden */
@@ -9,17 +8,16 @@ body, html, #root {
 .App {
   display: flex;
   flex-direction: column; /* Asettelu pystysuunnassa */
-  min-height: 100vh; /* Varmistetaan, että sivu täyttää koko näytön */
+  min-height: 100vh; 
 }
 
 main {
   background-color: #4790a4;
-  flex: 1; /* Tämä vie kaiken jäljelle jäävän tilan Headerin ja Footerin välillä */
-  width: 100%; /* Varmistetaan, että main täyttää koko leveyden */
+  flex: 1; 
+  width: 100%; 
 }
 
 
-/* NAVIGATION */
 .navbar-nav {
   display: flex;
   align-items: center;
@@ -31,7 +29,6 @@ main {
   font-size: 20px;
 }
 
-/* HOVER- JA AKTIIVINEN VÄRI */
 .nav-link:hover {
   color: #f4dc7d !important;
 }
@@ -41,12 +38,12 @@ main {
   font-weight: bold;
 }
 
-/* NAVITEM */
+
 .nav-item {
   list-style: none;
 }
 
-/* NAVIGATION MUIKKAUS MOBIILISSA */
+/* Navigation mobiilissa */
 @media (max-width: 768px) {
   .navbar-nav {
     text-align: center;
@@ -73,12 +70,12 @@ footer {
   color: white;
   padding: 10px;
   text-align: center;
-  min-height: 20px; /* Määrittää minimikorkeuden footerille */
-  margin-top: auto; /* Tämä varmistaa, että footer menee alas */
+  min-height: 20px; 
+  margin-top: auto; 
 }
 
 footer p {
-  margin-top: 20px; /* Siirtää tekstiä alaspäin */
+  margin-top: 20px; 
 }
 
 
@@ -91,24 +88,23 @@ footer p {
   font-size: 4.5rem;
   margin-bottom: 30px;
   font-family: 'DM-sans';
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 1); /* Tumma varjo */
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 1); 
 }
 
 
-@media (max-width: 768px) { /* Kun ruudun leveys on alle 768px (esim. tabletti tai mobiili) */
+@media (max-width: 768px) { 
   .home-container h1 {
-    font-size: 3rem; /* Pienennetään fonttikokoa pienellä näytöllä */
+    font-size: 3rem; 
     margin-bottom: 20px;
   }
 }
 
-@media (max-width: 576px) { /* Kun ruudun leveys on alle 768px (esim. tabletti tai mobiili) */
+@media (max-width: 576px) { 
   .home-container h1 {
-    font-size: 2.5rem; /* Pienennetään fonttikokoa pienellä näytöllä */
+    font-size: 2.5rem; 
     margin-bottom: 20px;
   }
 }
-
 
 
 
@@ -123,7 +119,7 @@ footer p {
 }
 
 .spacing-between {
-  margin-bottom: 100px; /* Voit muuttaa tämän arvoa tarpeen mukaan */
+  margin-bottom: 100px; 
 }
 
 
@@ -146,48 +142,43 @@ footer p {
 @media (max-width: 768px) {
   .home-background {
     background-size: cover;
-    background-position: center center; /* Keskittää kuvan, jos se on pienempi kuin näyttö */
+    background-position: center center;
     height: 50%;
 
   }
 }
 
 @media (max-width: 576px) {
-  /* Täällä lisäämme vielä säätöjä pienemmille näytöille, kuten puhelimen pystymuotoon */
   .home-background {
     background-size: cover;
-    background-position: center center; /* Keskittää kuvan, jos se on pienempi kuin näyttö */
+    background-position: center center; 
     height: 50%;
   }
 }
 
 
-
-
-
-/* App.css tai vastaava */
 .img-rounded {
-  width: 90%; /* Kuvan leveys täyttämään elementin */
-  height: auto; /* Kuvan korkeus suhteessa leveyteen */
-  border-radius: 30px; /* Pyöreät kulmat */
-  border: 10px solid #286779; /* Paksu musta reuna */
+  width: 90%; 
+  height: auto; 
+  border-radius: 30px; 
+  border: 10px solid #286779; 
 }
 
 
 .img-services {
-  width: 500px;      /* Kuvan leveys täyttää sen säilön leveys */
-  height: 400px;    /* Määritellään kiinteä korkeus, jolloin kuvat ovat samanpituisia */
-  object-fit: cover;  /* Kuva täyttää tilan, mutta se voi leikata kuvan osia säilyttäen mittasuhteet */
-  border-radius: 30px;  /* Pyöristetyt kulmat */
-  border: 10px solid #286779;  /* Paksu reuna */
+  width: 500px;     
+  height: 400px;  
+  object-fit: cover;  
+  border-radius: 30px;  
+  border: 10px solid #286779;  
 }
 
 
 .text-block {
-  max-width: 90%;  /* Rajoitetaan leveyttä */
+  max-width: 90%;  
   word-wrap: break-word;  /* Pakottaa tekstin rikkoontumaan rivillä */
   overflow-wrap: break-word;  /* Varmistaa tekstin rivin murtumisen */
-  margin-right: auto; /* Keskittää elementin */
+  margin-right: auto; 
 }
 
 
@@ -210,7 +201,6 @@ footer p {
 }
 
 
-/*  tabletit ja pienemmät näytöt */
 @media (max-width: 768px) {
   .services-container {
     padding: 30px;
@@ -224,30 +214,27 @@ footer p {
     font-size: 1.3rem;
   }
 
-  /* Varmistetaan, että kuvat ovat reagoivia */
   .img-services {
-    width: 500px;      /* Kuvan leveys täyttää sen säilön leveys */
-    height: 400px;    /* Määritellään kiinteä korkeus, jolloin kuvat ovat samanpituisia */
-    object-fit: cover;  /* Kuva täyttää tilan, mutta se voi leikata kuvan osia säilyttäen mittasuhteet */
-    border-radius: 30px;  /* Pyöristetyt kulmat */
-    border: 10px solid #286779;  /* Paksu reuna */
+    width: 500px;      
+    height: 400px;   
+    object-fit: cover;  
+    border-radius: 30px; 
+    border: 10px solid #286779;  
 }
 
   .img-rounded {
-    width: 100%; /* Kuvan koko skaalautuu täysikokoiseksi */
+    width: 100%; 
   }
 
-  /* Tekstien ja kuvien asettelu mobiilissa */
   .services-container h2 {
     font-size: 1.8rem; /* Pienempi otsikko */
     text-align: center; /* Keskitetään otsikko */
   }
 
   .services-container p {
-    font-size: 1rem; /* Tekstin koon pienentäminen mobiililla */
+    font-size: 1rem; 
   }
 
-  /* Sarakkeiden järjestys mobiililaitteilla */
   .services-container .row {
     flex-direction: column;
     align-items: center;
@@ -255,11 +242,11 @@ footer p {
 
   .services-container .col-md-6 {
     width: 100%;
-    margin-bottom: 20px; /* Lisää tilaa sarakkeiden väliin */
+    margin-bottom: 20px; 
   }
 
   .services-container .text-white {
-    text-align: center; /* Keskitetään tekstit */
+    text-align: center; 
   }
 }
 
@@ -283,7 +270,6 @@ footer p {
     font-size: 1.5rem; /* Pienempi alateksti */
   }
 
-  /* Kuvan skaalaus entistä pienemmille ruuduille */
   .img-services {
     width: 500px;
     height: 400px;
@@ -291,13 +277,13 @@ footer p {
   }
 
   .services-container p {
-    font-size: 1rem; /* Pienempi teksti pienillä näytöillä */
+    font-size: 1rem;
   }
 }
 
 
 .references-container {
-  padding: 50px 20px; /* Pienempi padding pienillä näytöillä */
+  padding: 50px 20px; 
   text-align: center;
 }
 
@@ -331,9 +317,9 @@ footer p {
   font-family: 'DM-sans';
 }
 
-@media (max-width: 576px) { /* Kun ruudun leveys on alle 768px (esim. tabletti tai mobiili) */
+@media (max-width: 576px) { 
   .references-container h1 {
-    font-size: 2rem; /* Pienennetään fonttikokoa pienellä näytöllä */
+    font-size: 2rem; 
     margin-bottom: 20px;
   }
 
@@ -345,27 +331,26 @@ footer p {
 
 .carousel-control-prev, 
 .carousel-control-next {
-  filter: invert(0);  /* Värjää nuolinapit valkoisiksi */
-  opacity: 1;         /* Varmistaa, että painikkeet näkyvät kunnolla */
+  filter: invert(0);  
+  opacity: 1;        
 }
 
 .carousel-control-prev {
-  left: -50px;  /* Siirtää vasemman painikkeen kauemmas kuvasta */
+  left: -50px;  
 }
 
 .carousel-control-next {
-  right: -50px; /* Siirtää oikean painikkeen kauemmas kuvasta */
+  right: -50px; 
 }
 
 
-/* Oletus koko */
 .carousel-img {
   width: 90%;
   height: 350px;
   object-fit: cover;
 }
 
-/* Tabletit (näyttö alle 768px) */
+
 @media (max-width: 768px) {
   .carousel-img {
     width: 100%;
@@ -373,7 +358,6 @@ footer p {
   }
 }
 
-/* Mobiili (näyttö alle 576px) */
 @media (max-width: 576px) {
   .carousel-img {
     width: 70%;
@@ -383,17 +367,17 @@ footer p {
 
 @media (max-width: 768px) {
   .carousel-control-prev {
-    left: -20px; /* Siirtää nuolta oikealle */
+    left: -20px; 
   }
 
   .carousel-control-next {
-    right: -20px; /* Siirtää nuolta vasemmalle */
+    right: -20px; 
   }
 }
 
 
 .carousel-indicators {
-  bottom: -50px;      /* Siirtää painikkeita suhteessa kuviin */
+  bottom: -50px;  
 }
 
 .gallery-img {
@@ -402,9 +386,9 @@ footer p {
 
 @media (max-width: 576px) {
   .gallery-img {
-    width: 80% !important; /* Tekee kuvista hieman pienemmät */
-    margin: 0 auto; /* Keskittää kuvat */
-    display: block; /* Varmistaa, että ne keskitetään */
+    width: 80% !important; 
+    margin: 0 auto; 
+    display: block;
   }
 }
 
@@ -416,29 +400,29 @@ footer p {
 
 /* Tyylit raksipainikkeelle */
 .custom-close-btn {
-  background-color: white; /* Valkoinen pohja */
-  border: 2px solid black; /* Tumma reunus */
-  color: black; /* Tumma X */
-  font-size: 1rem; /* Suurempi X-kirjain */
-  padding: 0.5rem; /* Lisää tilaa painikkeelle */
-  border-radius: 50%; /* Pyöristää kulmat */
-  opacity: 0.8; /* Vähän läpinäkyvä, mutta erottuu hyvin */
-  transition: opacity 0.3s ease; /* Pehmeä siirtymä */
+  background-color: white; 
+  border: 2px solid black; 
+  color: black; 
+  font-size: 1rem; 
+  padding: 0.5rem; 
+  border-radius: 50%; 
+  opacity: 0.8; 
+  transition: opacity 0.3s ease; 
 }
 
 .custom-close-btn:hover {
-  opacity: 1; /* Täysin näkyvä hover-tilassa */
+  opacity: 1; 
 }
 
 
 .custom-margin-top {
-  margin-top: 100px; /* Voit muuttaa tätä arvoa */
+  margin-top: 100px;
 }
 
 
 
 ul li {
-  margin-bottom: 20px; /* Lisää tilaa elementtien väliin */
+  margin-bottom: 20px; 
   text-align: left;
   list-style-position: inside;
   list-style-type: none;
@@ -465,10 +449,9 @@ ul li {
 
 
 
-/* Poista liian suuret marginaalit mobiilissa */
 @media (max-width: 992px) {
   .contact-container {
-    padding: 40px 20px; /* Lisää tilaa reunoihin */
+    padding: 40px 20px; 
     text-align: center;
   }
 
@@ -483,7 +466,7 @@ ul li {
 
   .contact-box {
     padding: 20px;
-    max-width: 100%; /* Jotta yhteystiedot ja lomake ovat täysleveitä mobiilissa */
+    max-width: 100%; 
   }
 
   .google-map {
@@ -501,10 +484,9 @@ ul li {
   }
 }
 
-/* Poista liian suuret marginaalit mobiilissa */
 @media (max-width: 768px) {
   .contact-container {
-    padding: 40px 20px; /* Lisää tilaa reunoihin */
+    padding: 40px 20px; 
     text-align: center;
   }
 
@@ -519,12 +501,12 @@ ul li {
 
   .contact-box {
     padding: 20px;
-    max-width: 100%; /* Jotta yhteystiedot ja lomake ovat täysleveitä mobiilissa */
+    max-width: 100%; 
   }
 
   .google-map {
     width: 100%;
-    height: 250px; /* Pienempi kartta mobiilissa */
+    height: 250px; 
     border-radius: 15px;
   }
 

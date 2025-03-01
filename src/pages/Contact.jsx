@@ -1,4 +1,3 @@
-// src/pages/Contact.jsx
 import React, { useState } from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 
@@ -42,13 +41,13 @@ function Contact() {
         </h3>
 
         <Row className='mb-5'>
-  <Col xs={12} md={6} className="mb-4"> {/* Tekee yhteystiedot täysleveäksi mobiilissa */}
-    <div className="contact-box p-4" style={{ 
-        backgroundColor: "#286779", 
-        borderRadius: "25px", 
-        maxWidth: "450px",  // Rajoittaa leveyttä
-        margin: "0 auto"    // Keskittää elementin
-        }}>
+          <Col xs={12} md={6} className="mb-4"> 
+            <div className="contact-box p-4" style={{ 
+              backgroundColor: "#286779", 
+              borderRadius: "25px", 
+              maxWidth: "450px",  
+              margin: "0 auto" 
+          }}>
       <h4 className="text-white mb-4">Rakennuspalvelu Oy</h4>
       <ul className="text-white">
         <li>📞 Puhelin: <a href="tel:+358401234567" className="text-white">+358 40 123 4567</a></li>
@@ -77,12 +76,12 @@ function Contact() {
 </Row>
 
 <Row>
-  <Col xs={12} md={8} lg={6} className="mx-auto contact-test"> {/* Keskittää lomakkeen isommalla näytöllä */}
+  <Col xs={12} md={8} lg={6} className="mx-auto contact-test"> 
     <div className="contact-box p-4" style={{ 
             backgroundColor: "#286779", 
             borderRadius: "25px", 
-            maxWidth: "500px",  // Rajoittaa leveyttä
-            margin: "0 auto"    // Keskittää elementin
+            maxWidth: "500px", 
+            margin: "0 auto"   
             }}>
       <Form onSubmit={handleSubmit}>
         <Form.Group controlId="formName">
@@ -101,7 +100,7 @@ function Contact() {
           <Form.Label className="text-white">Viesti</Form.Label>
           <Form.Control as="textarea" rows={4} placeholder="Kirjoita viestisi" name="message" value={formData.message} onChange={handleChange} />
         </Form.Group>
-        <Button variant="primary" type="submit" className="btn btn-light mt-4 w-100"> {/* Tee nappi täysleveäksi mobiilissa */}
+        <Button variant="primary" type="submit" className="btn btn-light mt-4 w-100"> 
           Lähetä viesti
         </Button>
       </Form>
