@@ -17,7 +17,6 @@ main {
   width: 100%; 
 }
 
-
 .navbar-nav {
   display: flex;
   align-items: center;
@@ -37,7 +36,6 @@ main {
   color: #ffcc00 !important;
   font-weight: bold;
 }
-
 
 .nav-item {
   list-style: none;
@@ -62,9 +60,6 @@ main {
   }
 }
 
-
-
-
 footer {
   background-color: #286779; /* Footerin taustaväri */
   color: white;
@@ -78,7 +73,6 @@ footer p {
   margin-top: 20px; 
 }
 
-
 .home-container {
   padding: 50px;
   text-align: left;
@@ -90,7 +84,6 @@ footer p {
   font-family: 'DM-sans';
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 1); 
 }
-
 
 @media (max-width: 768px) { 
   .home-container h1 {
@@ -106,8 +99,6 @@ footer p {
   }
 }
 
-
-
 .home-container p {
   font-size: 1.2rem;
   margin-bottom: 10px;
@@ -121,8 +112,6 @@ footer p {
 .spacing-between {
   margin-bottom: 100px; 
 }
-
-
 
 /* Taustakuva-asetukset */
 .home-background {
@@ -154,11 +143,7 @@ footer p {
     background-position: center center; 
     height: 50%;
   }
-
-  
 }
-
-
 
 .img-rounded {
   width: 90%; 
@@ -166,9 +151,6 @@ footer p {
   border-radius: 30px; 
   border: 10px solid #286779; 
 }
-
-
-
 
 .img-services {
   width: 500px;     
@@ -178,16 +160,12 @@ footer p {
   border: 10px solid #286779;  
 }
 
-
-
 .text-block {
   max-width: 90%;  
   word-wrap: break-word;  /* Pakottaa tekstin rikkoontumaan rivillä */
   overflow-wrap: break-word;  /* Varmistaa tekstin rivin murtumisen */
   margin-right: auto; 
 }
-
-
 
 .services-container {
   padding: 50px;
@@ -205,7 +183,6 @@ footer p {
   margin-bottom: 100px;
   font-family: 'DM-sans'
 }
-
 
 @media (max-width: 768px) {
   .services-container {
@@ -287,7 +264,6 @@ footer p {
   }
 }
 
-
 .references-container {
   padding: 50px 20px; 
   text-align: center;
@@ -309,12 +285,10 @@ footer p {
   margin-bottom: 0.5rem;
 }
 
-
 .references-container h1 {
   font-size: 2.5rem;
   margin-bottom: 30px;
   font-family: 'DM-sans';
- 
 }
 
 .references-container h3 {
@@ -334,7 +308,6 @@ footer p {
   }
 }
 
-
 .carousel-control-prev, 
 .carousel-control-next {
   filter: invert(0);  
@@ -349,13 +322,11 @@ footer p {
   right: -50px; 
 }
 
-
 .carousel-img {
   width: 90%;
   height: 350px;
   object-fit: cover;
 }
-
 
 @media (max-width: 768px) {
   .carousel-img {
@@ -381,7 +352,6 @@ footer p {
   }
 }
 
-
 .carousel-indicators {
   bottom: -50px;  
 }
@@ -398,11 +368,9 @@ footer p {
   }
 }
 
-
 .gallery-img:hover {
   transform: scale(1.05);
 }
-
 
 /* Tyylit raksipainikkeelle */
 .custom-close-btn {
@@ -420,12 +388,9 @@ footer p {
   opacity: 1; 
 }
 
-
 .custom-margin-top {
   margin-top: 100px;
 }
-
-
 
 ul li {
   margin-bottom: 20px; 
@@ -433,9 +398,6 @@ ul li {
   list-style-position: inside;
   list-style-type: none;
 }
-
-
-
 
 .contact-container {
   padding: 100px;
@@ -452,8 +414,6 @@ ul li {
   margin-bottom: 100px;
   font-family: 'DM-sans'
 }
-
-
 
 @media (max-width: 992px) {
   .contact-container {
@@ -480,8 +440,6 @@ ul li {
     height: 250px; /* Pienempi kartta mobiilissa */
     border-radius: 15px;
   }
-
-
 }
 
 @media (max-width: 658px) {
@@ -515,6 +473,4 @@ ul li {
     height: 250px; 
     border-radius: 15px;
   }
-
-  
 }
