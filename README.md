@@ -1,8 +1,13 @@
-# React + Vite
+# Rakennuspalvelu Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Tämä on rakennuspalveluyrityksen verkkosivusto, joka on rakennettu Reactilla ja Vite:llä. Sivustolla esitellään yrityksen palveluita, yrittäjää ja projekteja. Sivuston tarkoitus on tarjota asiakkaille helposti saatavilla olevaa tietoa rakennuspalveluista. 
 
-Currently, two official plugins are available:
+**Huomio**: Tämä projekti on **harjoitustyö** ja **kouluprojekti**, joten se ei ole täydellinen eikä valmis verkkosivusto. Sivuston toiminnallisuus ja visuaalisuus ovat vielä keskeneräisiä, ja osa ominaisuuksista on toteutettu pääasiassa harjoitustarkoituksessa. Projekti on osa opintojani ja toimii pohjana, jonka perusteella voin kehittää ja parantaa täysimittaisen verkkosivusto tulevaisuudessa.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Käytetyt teknologiat
+
+- **React** - JavaScript-kirjasto käyttöliittymän luomiseen.
+- **Vite** - Kehitystyökalun ja pakettien hallinnan nopeuttamiseen.
+- **React-Bootstrap** - Responsiivisten komponenttien luomiseen.
+- **React Router** - Navigointiin eri sivuille sovelluksessa.

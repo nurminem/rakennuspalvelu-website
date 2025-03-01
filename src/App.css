@@ -154,7 +154,10 @@ footer p {
     background-position: center center; 
     height: 50%;
   }
+
+  
 }
+
 
 
 .img-rounded {
@@ -165,6 +168,8 @@ footer p {
 }
 
 
+
+
 .img-services {
   width: 500px;     
   height: 400px;  
@@ -172,6 +177,7 @@ footer p {
   border-radius: 30px;  
   border: 10px solid #286779;  
 }
+
 
 
 .text-block {
